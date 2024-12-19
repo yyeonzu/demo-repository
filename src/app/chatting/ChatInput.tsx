@@ -16,7 +16,7 @@ export default function ChatInput({ onSendMessage }: ChatInputProps) {
     };
 
     return (
-        <form className="sticky bottom-0 left-0 right-0 p-4 bg-purple-100"
+        <form className="fixed bottom-0 left-0 right-0 p-4"
         onSubmit={handleSubmit}>
             <div className="relative">
                 <input
@@ -25,7 +25,7 @@ export default function ChatInput({ onSendMessage }: ChatInputProps) {
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
                     placeholder="메세지 입력"
-                    className="block w-full rounded-full border border-gray-300 bg-white p-4 ps-5 text-sm text-gray-900 shadow focus:border-purple-300 focus:ring-purple-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="w-full rounded-full border border-gray-300 bg-white p-4 ps-5 text-gray-900 shadow focus:border-purple-300 focus:ring-purple-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 />
                 <button
                     type="submit"
